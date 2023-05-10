@@ -1,1 +1,95 @@
 @import '~bootstrap/scss/bootstrap';
+body{
+    position: relative;
+}
+main {
+    min-height: 10vh;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+.navbar-links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+.nav-link {
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+
+    &:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+}
+
+.jumbo-img{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+      height: 330px;
+      & img{
+        height: 100%;
+    }
+
+  }
+
+ .box{
+    width: calc(100% / 6);
+}
+ .btn{
+    background-color: #0282F9;
+}
+.current-btn .btn{
+    position: relative;
+    bottom: 17px;
+
+}
+.signup .btn{
+    position: relative;
+    left: 39%;
+    margin-bottom: 14px;
+}
+.product-card {
+    & img{
+        width: 80%;
+        height: 178px;
+    }
+    & h3{
+        font-size: 12px;
+        color: white;
+        padding: 16px 0px;
+    }
+}
+
+.footer_bot {
+    background-color:#303030;
+    z-index: 1;
+    .socials {
+        flex-basis: 35%;
+        h3{
+        color: #0282F9;
+    }
+    }
+
+}
+footer{
+    min-width: 60vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color:#303030;
+  }
+

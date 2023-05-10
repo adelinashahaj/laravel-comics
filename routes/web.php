@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $animations = config('db.animationList');
+    return view('home',compact('animations') );
 })->name('home');
 
 
