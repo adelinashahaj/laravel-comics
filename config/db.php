@@ -73,23 +73,6 @@ return [
                     "series"=> "Catwoman",
                     "type"=> "graphic novel"
                 ],
-                 'menuLinks' => [
-                    [
-                        "title"=> "Dc Comics",
-                        "list"=> ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
-                    ],
-                    [
-                        "title"=> "Shop",
-                        "list"=> ["Shop DC", "Shop DC Collectibles"],
-                    ],
-                    [
-                        "title"=> "DC",
-                        "list"=> ["Terms Of Use", "Privacy Policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"],
-                    ],
-                    [
-                        "title"=> "Sites",
-                        "list"=> ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
-                    ],
-                ],
+                
             ]
             ];

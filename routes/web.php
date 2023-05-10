@@ -15,7 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $animations = config('db.animationList');
+
     return view('home',compact('animations') );
 })->name('home');
 
+// la pagina comics contiene un array
+Route::get('/comics', function () {
+    $data = config("comics");
+    return view('comics', compact("data"));
+})->name('comics');
 
+Route::view('/fans', 'fans')->name('fans');

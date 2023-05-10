@@ -8,10 +8,16 @@
                 <li class="m-3 {{Route::currentRouteName() == 'home'?'bg-white':''}}">
                     <a  href="{{route('home')}}">Home</a>
                 </li>
+                <li class="m-3 {{Route::currentRouteName() == 'home'?'bg-white':''}}">
+                    <a  href="{{route('comics')}}">Comics</a>
+                </li>
+                <li class="m-3 {{Route::currentRouteName() == 'home'?'bg-white':''}}">
+                    <a  href="{{route('fans')}}">Fans</a>
+                </li>
 
             </ul>
         </nav>
-       
+
 
     </div>
 

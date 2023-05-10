@@ -1,0 +1,39 @@
+main {
+    min-height: 10vh;
+    background-color: black;
+}
+
+main h4 {
+    color: white;
+}
+
+ .box{
+    width: calc(100% / 6);
+    margin-top: 65px;
+
+}
+ .btn{
+    background-color: #0282F9;
+}
+.current-btn .btn{
+    position: relative;
+    top: 318px;
+    left: 109px;
+
+}
+.signup .btn{
+    position: relative;
+    left: 39%;
+    margin-bottom: 14px;
+}
+.product-card {
+    & img{
+        width: 80%;
+        height: 178px;
+    }
+    & h3{
+        font-size: 12px;
+        color: white;
+        padding: 16px 0px;
+    }
+}
