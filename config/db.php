@@ -73,6 +73,29 @@ return [
                     "series"=> "Catwoman",
                     "type"=> "graphic novel"
                 ],
-                
-            ]
+
+
+            ],
+
+            'navLinks'=> [
+                [
+                    'route' => 'home',
+                    'label' => 'Home',
+                    'target' => '_self'
+                ],
+                [
+                    'route' => 'comics',
+                    'label' => 'Comics & Game',
+                    'target' => '_blank'
+                ],
+                [
+                    'route' => 'fans',
+                    'label' => 'Fans',
+                    'target' => '_blank'
+                ],
+
+
+
+
+            ],
             ];

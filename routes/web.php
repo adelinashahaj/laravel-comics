@@ -13,16 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// la pagina home contiene due array
 Route::get('/', function () {
-    $animations = config('db.animationList');
+    $animations =  config('db.animationList');
+    $navLinks =  config('db.navLinks');
 
-    return view('home',compact('animations') );
+    return view('/home', compact('animations', 'navLinks') );
 })->name('home');
 
-// la pagina comics contiene un array
+// la pagina comics contiene due array
 Route::get('/comics', function () {
     $data = config("comics");
-    return view('comics', compact("data"));
+    $navLinks =  config('db.navLinks');
+    return view('/comics', compact('data', 'navLinks'));
 })->name('comics');
 
-Route::view('/fans', 'fans')->name('fans');
+Route::get('/ fans', function () {
+    
+    $navLinks =  config('db.navLinks');
+
+    return view('/fans', compact( 'navLinks') );
+})->name('fans');

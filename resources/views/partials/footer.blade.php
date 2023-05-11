@@ -33,7 +33,17 @@
         <div class="footer-nav">
             <ul>
                 <li><h3>DC COMICS</h3></li>
-                {{-- foreach per gli elementi della navbar che sono ripetuti nel footer --}}
+
+        
+                    @foreach ($navLinks as $navLink)
+                    <li class="m-3 ">
+                     <a  href="{{route($navLink['route'])}}"
+                     target="{{$navLink['target']}}"
+                     class="{{(Route::currentRouteName() == $navLink['route']) ?'active':''}}"
+                     class="nav-link">{{$navLink['label']}}</a>
+                 </li>
+                    @endforeach
+
 
 
                 <li><h3>SHOP</h3></li>

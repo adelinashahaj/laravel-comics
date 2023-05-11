@@ -1,3 +1,5 @@
+
+{{-- aggiungo il layout di default --}}
 @extends('layouts.app')
 
 
@@ -6,7 +8,7 @@
 
 @section('jumbotron')
 <div class="jumbo-img">
-    
+
     <div class="current-btn">
         <a href="#" class="btn text-white border border-2 border-primary">CURRENT SERIES</a>
     </div>
